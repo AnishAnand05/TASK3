@@ -1,0 +1,8 @@
+.mytable,th,td{
+     border: 2px solid black;
+    border-collapse: collapse;
+}
+.mytable{
+    width: 100%;
+    background-color: red;
+}
