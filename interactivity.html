@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Interactivity</title>
+    <link rel="stylesheet" href="inter.css">
+    <style>
+        h1{
+            background-color: aquamarine;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <h1 id="heading">This is heading text</h1>
+        <button onclick="ChangeColor()">Press Me</button>
+        <script>
+            function ChangeColor(){
+                var content = "This is JS changed text";
+                var x =document.getElementById("heading");
+                x.innerHTML=content
+                // alert(x);
+                x.style.backgroundColor ="red";
+            }
+            function RestoreColor(){
+                  var content = "This is headinh text";
+                var x =document.getElementById("heading");
+                x.innerHTML=content
+                // alert(x);
+                x.style.backgroundColor ="aquamarine";
+            }
+        </script>
+</body>
+</html>
