@@ -3,11 +3,11 @@
    <head>
       <title>HTML FORM</title>
 	  <style>
-	    body{border:5px solid brown;color:brown;height:355px;width: 500px;margin-left:20%;border-radius: 10px}
+	    body{border:5px solid brown;color:brown;height:60%;width: 50%;margin-left: 25%;border-radius: 10px}
 		/* p{background-color:yellow;color:red} */
 		h1{text-align:center;color:rgb(247, 5, 5);margin-top: 1%;}
-		form{text-align:center;font-weight:bold;color:black;border-radius: 10px;padding: 10px;margin :10px;}
-	    .c{background-color:rgb(196, 169, 196);width:500px;height:350px;}
+		form{text-align:center;font-weight:bold;color:black;border-radius: 10px;padding: 5px;}
+	    .c{background-color:rgb(196, 169, 196);height:100%;width: 100%;}
 		/* .d{background-color:#ffff00;width:500px;} */
 		.E{background-color:white}
 		label {width:200px;}
@@ -33,11 +33,11 @@
 		  <div class="main"><label for="EMAIL">EMAIL  </label>
 		  <input type="email"></div>
 		  <br>
-		<div class="main">  <label for="Gender">Gender :</label>
-		  <select name="" id=""><option value="">Select</option>
-          <option value="">Male</option>
-          <option value="">Female</option>
-          <option value="">Others</option>
+		<div class="main"> 
+			<label for="Gender">Gender :</label>
+		    <input type="radio" name="gender" value="male" required> Male</label>
+			<label><input type="radio" name="gender" value="female"> Female</label>
+			<label><input type="radio" name="gender" value="other"> Other</label>
         </select></div>
 		  <br>
 		  <label for="EDUCATION">EDUCATION</label>
@@ -74,5 +74,6 @@
 		 </label>
 		 </form>
 		</div>
+		
 	 </body>
 </html>
