@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Task - 15</title>
+</head>
+<body>
+    <p>if want to see without dom use, check in console already done</p>
+    <script>
+        const arra1 =[3, 6, 2];
+        const arra2 =[4, 1, 7];
+        const new1 = arra1.concat(arra2);
+        console.log("after concatenate",new1);
+        console.log("after sorting",new1.sort((a, b) => a - b));
+        new1.shift();
+        console.log("after removal of first ele",new1);
+    </script>
+    <h2 style="color: red;">Write a program to sort a JavaScript Array.</h2>
+  <h3>Original & Sorted Array</h3>
+  <p id="original"></p>
+  <p id="sorted"></p>
+
+  <script>
+    const numbers = [42, 7, 13, 99, 23];
+    document.getElementById("original").innerText = "Original Array: " + numbers.join(", ");
+
+    const sorted = [...numbers].sort((a, b) => a - b);
+    document.getElementById("sorted").innerText = "Sorted Array: " + sorted.join(", ");
+  </script>
+<h2 style="color: red;"> Write a program to concatenate two array elements and store them in new array.</h2>
+
+  <h3>Concatenated Array</h3>
+  <p id="result1"></p>
+  <script>
+    const arr1 = [3, 6, 2];
+    const arr2 = [4, 1, 7];
+    const combined = arr1.concat(arr2); 
+    document.getElementById("result1").innerText = "New Array: " + combined.join(", ");
+  </script>
+
+ <h2 style="color: red;">Write a program to remove first element from JavaScript Array.</h2>
+  <h3>After First Element Removed</h3>
+  <p id="input"></p>
+  <p id="result2"></p>
+
+  <script>
+    let arr = ["Apple", "Banana", "mango"];
+    document.getElementById("input").innerText = "Before removal of first element :- " + arr.join(", ");
+    arr.shift(); // Removes "Apple"
+    document.getElementById("result2").innerText = "After removal of first element :- " + arr.join(", ");
+  </script>
+</body>
+</html>
